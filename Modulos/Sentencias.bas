@@ -37,10 +37,17 @@ With Rsmateriap
 End With
 End Sub
 
-Sub Abrirtinventario()
+Sub Abrirtbinventario()
 With Rsinventario
     If .State = 1 Then .Close
     .Open "select *from inventario", BD, adOpenStatic, adLockOptimistic
+End With
+End Sub
+
+Sub Abrirtbordenp()
+With Rsordenp
+    If .State = 1 Then .Close
+    .Open "select *from ordenp", BD, adOpenStatic, adLockOptimistic
 End With
 End Sub
 

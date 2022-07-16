@@ -9,11 +9,14 @@ Global Rstela As New ADODB.Recordset
 Global Rsprenda As New ADODB.Recordset
 Global Rsmateriap As New ADODB.Recordset
 Global Rsinventario As New ADODB.Recordset
+Global Rsordenp As New ADODB.Recordset
 
 'Variables de usuario
 Global wcodigo As Integer
 Global mcodigo As String
-
+Global mnombre As String
 Global id_tela As Integer
 Global id_color As Integer
-
+Global id_inv As Integer
+Global id_materiap As Integer
+Global id_prenda As Integer

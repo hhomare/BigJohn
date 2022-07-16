@@ -32,6 +32,9 @@ Begin VB.MDIForm MDIForm1
       Caption         =   "OrdeProduccion"
       Index           =   6
    End
+   Begin VB.Menu nm_cprenda 
+      Caption         =   "ConsultaPrendas"
+   End
    Begin VB.Menu nmsalir 
       Caption         =   "Salir"
       Index           =   7
@@ -46,8 +49,20 @@ Private Sub mn_color_Click(Index As Integer)
 FrmColor.Show
 End Sub
 
+Private Sub nm_cprenda_Click()
+Frmcprenda.Show
+End Sub
+
+Private Sub nm_inventario_Click(Index As Integer)
+FrmInventario.Show
+End Sub
+
 Private Sub nm_materip_Click(Index As Integer)
 Frmprueba.Show
+End Sub
+
+Private Sub nm_ordep_Click(Index As Integer)
+FrmOrdenP.Show
 End Sub
 
 Private Sub nm_prenda_Click(Index As Integer)

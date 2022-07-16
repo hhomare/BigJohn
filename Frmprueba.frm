@@ -374,6 +374,10 @@ Set GRIDMP.DataSource = Rsmateriap
 End With
 End Sub
 
+Private Sub BtnSalir_Click(Index As Integer)
+Unload Me
+End Sub
+
 Private Sub Form_Load()
 Abrirtbtela
 Set Gridtela.DataSource = Rstela
